@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffcc;
+}
+
+/*----------logo, hero, and nav section------------*/
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    background-image: url(img/bc_logo3.jpg);
+    background-size: 100%;
+    background-position:50% 50%;
+
+}
+
+.logo img{
+    background-attachment: fixed;
+}
+
+#cart{
+    display: block;
+    align-items: flex-end;
+}
+
+.nav-bar{
+    height: 70px;
+    background: #bf8040;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar ul{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    line-height: 80px;
+    padding-right: 25px;
+}
+
+.nav-bar ul li a{
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+.store-name {
+    height: 500px;
+    background-image: url(img/background.jpg);
+}
+
+.store-name #welcome{
+    font-weight: lighter;
+    font-size: 100px;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family: 'Chewy', cursive;
+}
+
+.store-name #to{
+    padding-left: 200px;
+    font-size: 50px;
+    font-family: 'Lobster', cursive
+}
+
+
+.store-name #store{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 70px;
+    padding-top: 25px;
+}
+
+.store-name #shop{
+    padding-left: 150px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 70px;
+}
+
+.store-name #tagline{
+    padding-left: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+/*----------product section------------*/
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+.small-container .col-3{
+    cursor: pointer;
+}
+
+.small-container .col-4{
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Bread*/
+
+.title-bread{
+    text-align: center;
+    height: 100px;
+}
+
+.title-bread h1{
+    font-family: 'Combo', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+
+.col-3 #buy-now{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #ffdd99;
+}
+
+.col-4 #buy-now{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #ffdd99;
+}
+
+/*Cakes*/
+
+.title-cakes{
+    text-align: center;
+    height: 100px;
+}
+
+.title-cakes h1{
+    font-family: 'Combo', cursive;
+    font-size: 100px;
+    color: black;
+}
+
+#cakeback{
+    display: flex;
+    border-radius: 50px;
+}
+
+
+.title{
+    text-align: center;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 10px;
+    transform: 0.5s;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.col-3:hover{
+    transform: translateY(5px);
+}
+
+.col-3 h4{
+    text-align: center;
+}
+
+.col-3 h5{
+    text-align: center;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 10px;
+    transform: 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.col-4:hover{
+    transform: translateY(5px);
+}
+
+.col-4 h4{
+    text-align: center;
+}
+
+.col-4 h5{
+    text-align: center;
+}
+
+/*-----------------Testimonies---------------------*/
+
+.comment{
+    height: 40px;
+    background: #ffecb3;
+}
+.comment h1{
+    text-align: center;
+    font-family: 'Smooch', cursive;
+    font-size: 30px;
+}
+
+.testimonial{
+    padding-top: 25px;
+}
+
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+/*Brands*/
+
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+/*--------------About Section, CTA Section, Footer---------*/
+
+.footer{
+    background:  #ffbf80;
+    color: black;
+    font-size: 14px;
+    padding: 30px 0px 20px;
+}
+
+.about-us, .cta-section{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.cta-section{
+    flex: 1;
+    text-align: center;
+}
+
+.cta-section h1{
+    font-family: 'Noto Serif Georgian', serif;
+}
+
+.cta-section #btn{
+    font-weight: bold;
+    color: #ffffcc;
+}
+
+
+.about-us{
+    flex: 1;
+    text-align: center;
+}
+
+.about-us h1{
+    padding-bottom: 10px;
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 40px;
+    color: #1f1301;
+}
+
+.about-us p{
+    font-size: 20px;
+    font-family: 'Italiana', serif;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+}
+
+hr{
+    background-color: #000;
+}
+
+.cta-section p{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+    font-size: 25px;
+}
+    
+/*------------Media query for menu-------------*/
+
+@media only screen and (max-width:500px){
+    .footer .about-us p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .row{
+        text-align: center;
+    }
+
+    .col-3, .col-4{
+        flex-basis: 100%;
+    }
+
+}
